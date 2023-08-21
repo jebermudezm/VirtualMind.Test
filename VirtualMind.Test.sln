@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Layers", "1 - Layers", "{662CEA45-8C0F-45E9-827E-DD6EC295B484}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Database", "2 - Database", "{C5C9A985-1AA2-4B32-9628-8035E0475D3D}"
+	ProjectSection(SolutionItems) = preProject
+		DB\CreateDb.sql = DB\CreateDb.sql
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.1 - Presentation", "1.1 - Presentation", "{A436C77A-5065-43F8-A838-F0696236114F}"
 EndProject
@@ -39,11 +42,29 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualMind.Test.Library", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualMind.Test.ExternalServices", "VirtualMind.Test.ExternalServices\VirtualMind.Test.ExternalServices.csproj", "{D9BBFFDC-B039-4BF8-BDF8-7B443CE8A169}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "VirtualMind.Test.Database", "VirtualMind.Test.Database\VirtualMind.Test.Database.sqlproj", "{8355535A-BF99-4FAE-BF06-1B665B61FD56}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Tests", "3 - Tests", "{1F33B580-552D-4DD0-BE82-2EEA9360C3F3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualMind.Test.Tests", "VirtualMind.Test.Tests\VirtualMind.Test.Tests.csproj", "{E65DFFB7-0E71-40FE-85CD-38D09E4A6F75}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Virtualmind.Test.SPA", "UI\Virtualmind.Test.SPA\", "{376D2484-81A5-48CC-9D4A-DA98499DBA4E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52001"
+		Debug.AspNetCompiler.PhysicalPath = "UI\Virtualmind.Test.SPA\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52001\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52001"
+		Release.AspNetCompiler.PhysicalPath = "UI\Virtualmind.Test.SPA\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52001\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52001"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,16 +96,14 @@ Global
 		{D9BBFFDC-B039-4BF8-BDF8-7B443CE8A169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9BBFFDC-B039-4BF8-BDF8-7B443CE8A169}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9BBFFDC-B039-4BF8-BDF8-7B443CE8A169}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8355535A-BF99-4FAE-BF06-1B665B61FD56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8355535A-BF99-4FAE-BF06-1B665B61FD56}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8355535A-BF99-4FAE-BF06-1B665B61FD56}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{8355535A-BF99-4FAE-BF06-1B665B61FD56}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8355535A-BF99-4FAE-BF06-1B665B61FD56}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8355535A-BF99-4FAE-BF06-1B665B61FD56}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{E65DFFB7-0E71-40FE-85CD-38D09E4A6F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E65DFFB7-0E71-40FE-85CD-38D09E4A6F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E65DFFB7-0E71-40FE-85CD-38D09E4A6F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E65DFFB7-0E71-40FE-85CD-38D09E4A6F75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{376D2484-81A5-48CC-9D4A-DA98499DBA4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{376D2484-81A5-48CC-9D4A-DA98499DBA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{376D2484-81A5-48CC-9D4A-DA98499DBA4E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{376D2484-81A5-48CC-9D4A-DA98499DBA4E}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,8 +124,8 @@ Global
 		{4E4B5BB6-4544-4E50-AE2D-B623BE835269} = {CF30B7CA-E12C-490F-9636-F40EF5ED711B}
 		{699B712B-8EE4-4D6F-8278-2CD97B4B21A6} = {DD5B61F7-7235-4033-BCC4-FDCF95E41ED5}
 		{D9BBFFDC-B039-4BF8-BDF8-7B443CE8A169} = {1C6D6760-F79F-4F4C-A7F0-0AB90D329A44}
-		{8355535A-BF99-4FAE-BF06-1B665B61FD56} = {C5C9A985-1AA2-4B32-9628-8035E0475D3D}
 		{E65DFFB7-0E71-40FE-85CD-38D09E4A6F75} = {1F33B580-552D-4DD0-BE82-2EEA9360C3F3}
+		{376D2484-81A5-48CC-9D4A-DA98499DBA4E} = {A436C77A-5065-43F8-A838-F0696236114F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {80A87A5A-7EBB-4C6C-ADF2-1A81B74CAF77}
