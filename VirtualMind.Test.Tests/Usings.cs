@@ -1,0 +1,17 @@
+global using Xunit;
+global using System;
+global using Moq;
+global using Microsoft.AspNetCore.Mvc;
+global using System.Threading.Tasks;
+global using System.Net;
+global using System.Collections.Generic;
+global using Microsoft.EntityFrameworkCore;
+global using VirtualMind.Test.Contracts.ServiceLibrary;
+global using VirtualMind.Test.WebApi.Controllers;
+global using VirtualMind.Test.Library.Model;
+global using VirtualMind.Test.ExternalServices;
+global using VirtualMind.Test.Library.Wraper;
+global using VirtualMind.Test.Impl.ServiceLibrary;
+global using VirtualMind.Test.Library.Contracts;
+global using VirtualMind.Test.EF.Context;
+global using VirtualMind.Test.EF.Repository;
