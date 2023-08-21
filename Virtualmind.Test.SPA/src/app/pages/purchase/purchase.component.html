@@ -1,0 +1,19 @@
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-rotate">  
+<p style="color: white">Please Wait... </p>  
+</ngx-spinner>  
+<div>
+    <h1>purchase</h1>
+    <div>
+        <h2>Purchase Currency</h2>
+        
+        <label>User ID: <input [(ngModel)]="userId"></label>
+        <label>Currency: <input [(ngModel)]="currency"></label>
+        <label>Amount: <input [(ngModel)]="amount"></label>
+        
+        <button (click)="makePurchase()">Purchase</button>
+        
+        <div *ngIf="result">
+          <p>Purchased: {{ result.purchasedAmount }} {{ result.currency }}</p>
+        </div>
+      </div>
+</div>

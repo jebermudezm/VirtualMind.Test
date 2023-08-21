@@ -1,0 +1,46 @@
+@import 'ngx-toastr/toastr';
+
+.container {
+    display: flex;
+  }
+  
+  .left-sidebar {
+    width: 250px; 
+    min-height: 100vh;
+    background-color: #b6b3b3; 
+    color: #060000; 
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); 
+  }
+  
+.left-sidebar ul {
+  list-style-type: none; 
+  padding: 0; 
+}
+
+.left-sidebar li {
+  padding: 10px 0;
+  cursor: pointer; 
+}
+
+.left-sidebar li:hover {
+  background-color: #555; 
+}
+
+.content {
+  flex: 1; 
+  padding: 20px;
+  background-color: #f4f4f4; 
+}
+
+.footer {
+    bottom: 0;
+    color: #67757c;
+    left: 0px;
+    padding: 17px 15px;
+    position: absolute;
+    right: 0;
+    border-top: 1px solid rgba(120, 130, 140, 0.13);
+    background: #ffffff;
+  }
+  
